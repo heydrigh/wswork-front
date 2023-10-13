@@ -12,5 +12,6 @@ module.exports = {
     '\\.(svg)$': '<rootDir>/node_modules/jest-svg-transformer',
     '^@utils/(.*)$': '<rootDir>/src/utils/$1',
     '^@hooks/(.*)$': '<rootDir>/src/hooks/$1',
+    '^@components/(.*)$': '<rootDir>/src/components/$1',
   },
 };

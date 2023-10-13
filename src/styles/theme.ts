@@ -11,12 +11,13 @@ export default {
     primary: '#FCCD2A',
     secondary: '#1E5084',
     tertiary: '#707070',
-    warning: '#FAAD14',
-    success: '#52C41A',
-    error: '#CC1010',
     white: '#fff',
     black: '#000',
     gray: '#E8E8E8',
+    bgGradient: 'linear-gradient(135deg, #1E5084, #0E2544)',
+    success: '#52C41A',
+    warning: '#FAAD14',
+    error: '#CC1010',
   },
   border: {
     radius: {

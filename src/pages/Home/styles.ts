@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   height: 100vh;
@@ -6,4 +6,21 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 0 2rem;
+`;
+
+export const BrandsWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const Brand = styled.h2`
+  ${({ theme }) => css`
+    font-size: ${theme.fonts.sizes.large};
+    color: ${theme.colors.white};
+    margin-bottom: 2rem;
+  `}
 `;
