@@ -1,9 +1,10 @@
 import styled, { css, DefaultTheme } from 'styled-components';
+import { Button } from 'antd';
 import { IButtonProps } from './types';
 
 const ButtonModifiers = {
   primary: (theme: DefaultTheme) => css`
-    background-color: ${theme.colors.secondary};
+    background-color: ${theme.colors.primary};
     color: ${theme.colors.white};
   `,
   secondary: (theme: DefaultTheme) => css`
@@ -13,7 +14,7 @@ const ButtonModifiers = {
   `,
 };
 
-export const Wrapper = styled.button<Pick<IButtonProps, 'variant'>>`
+export const Wrapper = styled(Button)<Pick<IButtonProps, 'variant'>>`
   ${({ theme, variant }) => css`
     height: 4.3rem;
     display: flex;

@@ -33,7 +33,9 @@
     "test": "jest --coverage",
     "eject": "craco eject",
     "lint": "eslint src --max-warnings=0",
-    "json-server": "json-server --watch db.json --port 3333"
+    "json-server": "json-server --watch db.json --port 3333",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
@@ -54,8 +56,19 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.4.6",
+    "@storybook/addon-interactions": "^7.4.6",
+    "@storybook/addon-links": "^7.4.6",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/addon-themes": "^7.4.6",
+    "@storybook/blocks": "^7.4.6",
+    "@storybook/preset-create-react-app": "^7.4.6",
+    "@storybook/react": "^7.4.6",
+    "@storybook/react-webpack5": "^7.4.6",
+    "@storybook/testing-library": "^0.2.2",
     "@types/lodash": "^4.14.199",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "eslint": "^8.0.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -66,8 +79,13 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-storybook": "^0.6.15",
     "json-server": "^0.17.4",
     "prettier": "^2.8.8",
-    "ts-jest": "^29.1.0"
+    "prop-types": "^15.8.1",
+    "storybook": "^7.4.6",
+    "ts-jest": "^29.1.0",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "webpack": "^5.88.2"
   }
 }

@@ -9,9 +9,9 @@ export const mockCars: Car[] = [
     combustivel: 'Flex',
     num_portas: 4,
     cor: 'Vermelho',
-    nome_modelo: 'X',
+    nome_modelo: 'Modelo X',
     valor: 30000,
-    brand: 'XX',
+    brand: 'Marca XX',
   },
   {
     id: 2,
@@ -21,8 +21,8 @@ export const mockCars: Car[] = [
     combustivel: 'Diesel',
     num_portas: 2,
     cor: 'Azul',
-    nome_modelo: 'Y',
+    nome_modelo: 'Modelo Y',
     valor: 25000,
-    brand: 'YY',
+    brand: 'Marca YY',
   },
 ];
