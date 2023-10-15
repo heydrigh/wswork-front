@@ -98,7 +98,7 @@ function Home() {
                 placeholder='R$ 2000'
                 name='price'
                 label='Preço'
-                type='number'
+                mask='R$ 999,999.99'
               />
             </Col>
           </Row>

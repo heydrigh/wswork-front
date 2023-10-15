@@ -1,5 +1,4 @@
-// src/components/Input/styles.ts
-
+import { NumericFormat } from 'react-number-format';
 import styled, { css } from 'styled-components';
 
 interface InputProps {
@@ -13,6 +12,14 @@ export const Wrapper = styled.div`
 `;
 
 export const Input = styled.input<InputProps>`
+  ${({ theme, $hasError }) => css`
+    border-radius: ${theme.border.radius.default};
+    padding: 0.5rem;
+    border: 1px solid ${$hasError ? theme.colors.error : theme.colors.gray};
+  `}
+`;
+
+export const NumericInput = styled(NumericFormat)<InputProps>`
   ${({ theme, $hasError }) => css`
     border-radius: ${theme.border.radius.default};
     padding: 0.5rem;
