@@ -24,3 +24,23 @@ export const Brand = styled.h2`
     margin-bottom: 2rem;
   `}
 `;
+
+export const ContentWrapper = styled.div`
+  margin-top: 2rem;
+`;
+
+export const DatePickerWrapper = styled.div`
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Label = styled.label`
+  margin: 0 0 0.4rem 0.4rem;
+`;
+
+export const ErrorMessage = styled.span`
+  ${({ theme }) => css`
+    color: ${theme.colors.error};
+  `}
+`;

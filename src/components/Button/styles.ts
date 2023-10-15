@@ -1,5 +1,4 @@
 import styled, { css, DefaultTheme } from 'styled-components';
-import { Button } from 'antd';
 import { IButtonProps } from './types';
 
 const ButtonModifiers = {
@@ -14,7 +13,7 @@ const ButtonModifiers = {
   `,
 };
 
-export const Wrapper = styled(Button)<Pick<IButtonProps, 'variant'>>`
+export const Wrapper = styled.button<Pick<IButtonProps, 'variant'>>`
   ${({ theme, variant }) => css`
     height: 4.3rem;
     display: flex;
@@ -24,6 +23,6 @@ export const Wrapper = styled(Button)<Pick<IButtonProps, 'variant'>>`
     border-radius: ${theme.border.radius.default};
     font-size: ${theme.fonts.sizes.medium};
     cursor: pointer;
-    ${!!variant && ButtonModifiers[variant](theme)}
+    ${!!variant && ButtonModifiers[variant](theme)};
   `}
 `;

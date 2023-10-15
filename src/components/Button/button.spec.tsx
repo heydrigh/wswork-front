@@ -25,17 +25,17 @@ describe('Button', () => {
   });
 
   it('should render primary style by default', () => {
-    const utils = renderWithTheme(<Button>Test Button</Button>);
-    const button = utils.getByText('Test Button');
-    expect(button).toHaveStyle(`background-color: ${theme.colors.secondary}`);
+    const { getByText } = renderWithTheme(<Button>Test Button</Button>);
+    const button = getByText('Test Button');
+    expect(button).toHaveStyle(`background-color: ${theme.colors.primary}`);
     expect(button).toHaveStyle(`color: ${theme.colors.white}`);
   });
 
   it('should render secondary style when variant prop is secondary', () => {
-    const utils = renderWithTheme(
+    const { getByText } = renderWithTheme(
       <Button variant='secondary'>Test Button</Button>,
     );
-    const button = utils.getByText('Test Button');
+    const button = getByText('Test Button');
     expect(button).toHaveStyle(`background-color: ${theme.colors.white}`);
     expect(button).toHaveStyle(`color: ${theme.colors.secondary}`);
   });
