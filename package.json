@@ -36,7 +36,7 @@
     "test": "jest --coverage",
     "eject": "craco eject",
     "lint": "eslint src --max-warnings=0",
-    "json-server": "json-server --watch db.json --port 3333",
+    "server": "json-server --watch db.json --port 3333",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },

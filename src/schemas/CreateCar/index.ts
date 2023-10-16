@@ -17,6 +17,7 @@ export const createCarValidationSchema = Yup.object().shape({
     ),
   color: Yup.string().required(requiredMessage),
   modelName: Yup.string().required(requiredMessage),
+  brand: Yup.string().required(requiredMessage),
   price: Yup.number()
     .required(requiredMessage)
     .positive('escolha um preço válido'),

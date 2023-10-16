@@ -1,7 +1,8 @@
 import { AxiosError } from 'axios';
 import { useQuery, UseQueryOptions } from 'react-query';
 
-import { carsApi, GetCarsResponse } from '@services/api/routes';
+import { carsApi } from '@services/api/routes';
+import { GetCarsResponse } from '@services/api/types';
 
 type GetAllCarsOptions = UseQueryOptions<
   GetCarsResponse,

@@ -9,7 +9,7 @@
       "num_portas": 4,
       "cor": "BRANCA",
       "nome_modelo": "ETIOS",
-      "valor": 36000.0,
+      "valor": 36000,
       "brand": "Toyota"
     },
     {
@@ -21,10 +21,9 @@
       "num_portas": 4,
       "cor": "PRETO",
       "nome_modelo": "COROLLA",
-      "valor": 120000.0,
+      "valor": 120000,
       "brand": "Toyota"
     },
-
     {
       "id": 3,
       "timestamp_cadastro": 16965354321,
@@ -48,6 +47,18 @@
       "nome_modelo": "Classe C",
       "valor": 474444.5,
       "brand": "Mercedes"
+    },
+    {
+      "ano": 2020,
+      "brand": "teste",
+      "combustivel": "teste",
+      "cor": "teste",
+      "nome_modelo": "teste",
+      "num_portas": 2,
+      "valor": 233.33,
+      "id": 464546,
+      "modelo_id": 658836,
+      "timestamp_cadastro": 1697469539
     }
   ]
 }

@@ -1,8 +1,7 @@
-import { Car } from 'types/car';
 import { api } from '.';
-
-export type GetCarsResponse = Car[];
+import { CreateCarDTO, GetCarsResponse } from './types';
 
 export const carsApi = {
   getAllCars: () => api.get<GetCarsResponse>('/cars'),
+  createCar: (createCarDTO: CreateCarDTO) => api.post('/cars', createCarDTO),
 };
