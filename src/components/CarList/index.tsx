@@ -11,7 +11,7 @@ import { CarListProps } from './types';
  */
 function CarList({ cars }: CarListProps) {
   return (
-    <Row align='top' gutter={[16, 16]}>
+    <Row align='top' justify='center' gutter={[16, 16]}>
       {cars.map((car) => (
         <Col key={car.id}>
           <CarCard car={car} />
